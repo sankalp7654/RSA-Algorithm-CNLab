@@ -52,7 +52,7 @@ public class RSA {
 		}
 		
 		double encryptedMessage = (Math.pow(message, e)) % n;
-		double decryptedMessage = (Math.pow(encryptedMessage, e)) % n;
+		double decryptedMessage = (Math.pow(encryptedMessage, d)) % n;
 		
 		System.out.println("Encrypted Message: " + encryptedMessage);
 		System.out.println("Decrypted Message: " + decryptedMessage);
